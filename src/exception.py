@@ -1,5 +1,5 @@
 import sys
-
+from src.logger import logging
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_details.exc_info()
     file_name=exc_tb.tb_frame.f_code.co_filename
@@ -18,8 +18,8 @@ def error_message_detail(error,error_detail:sys):
     def__str__(self):
         return self.error_message
 
-        
-if__name__=="__main__":
+
+if __name__=="__main__":
 
     try:
         a=1/0
